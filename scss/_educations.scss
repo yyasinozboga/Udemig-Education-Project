@@ -1,0 +1,26 @@
+#educations {
+  .row {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 40px;
+
+    .col {
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+
+      &-img img {
+        border-radius: 50%;
+        transition: $mainTransition;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      h4 {
+        margin-top: 20px;
+        color: $textColor;
+      }
+    }
+  }
+}

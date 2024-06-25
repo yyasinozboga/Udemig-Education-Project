@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  padding: 30px 20px;
+
+  &-logo {
+    font-weight: bold;
+    font-size: 32px;
+
+    span {
+      color: $mainColor;
+    }
+  }
+
+  .navbar {
+    @include dflex(space-between, center);
+
+    &-nav {
+      @include dflex(center, center);
+      gap: 30px;
+
+      .nav-link {
+        text-transform: uppercase;
+        transition: $mainTransition;
+
+        &.active {
+          color: $mainColor;
+        }
+
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+
+    &-right {
+      &-item {
+        transition: $mainTransition;
+
+        &:first-child a {
+          font-size: $pFont;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+
+          a {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+
+    .res-menu {
+      display: none;
+
+      &-btn {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#about {
+  .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    img {
+      border-radius: 12px;
+    }
+
+    .box {
+      &-title {
+        color: $textColor;
+        font-size: $h2Font;
+      }
+
+      .min-content {
+        display: none;
+      }
+    }
+  }
+}

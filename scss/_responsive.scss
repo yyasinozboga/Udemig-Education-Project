@@ -1,0 +1,59 @@
+@media (max-width: 390px) {
+  .header {
+    padding-top: 15px;
+
+    &-logo {
+      font-size: $resFont;
+    }
+  }
+
+  .navbar-nav {
+    display: none !important;
+  }
+
+  .res-menu {
+    display: block !important;
+
+    &-btn {
+      display: block !important;
+    }
+  }
+
+  .row {
+    grid-template-columns: 1fr !important;
+  }
+
+  #home {
+    .box {
+      padding: 0 50px !important;
+    }
+  }
+
+  .box-title {
+    font-size: $resH1Font !important;
+  }
+
+  #about {
+    .box-content {
+      display: none;
+    }
+
+    .min-content {
+      display: block !important;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+
+  #courses {
+    padding: 40px 0;
+  }
+
+  .footer {
+    .row {
+      gap: 30px;
+    }
+  }
+}

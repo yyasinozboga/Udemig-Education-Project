@@ -1,0 +1,41 @@
+#contact {
+  .row {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    img {
+      border-radius: 12px;
+    }
+
+    .form {
+      &-group {
+        margin-bottom: 5px;
+        width: 100%;
+        @include dflex(center, start);
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      &-label {
+        color: $textColor;
+      }
+
+      &-input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+        text-indent: 5px;
+      }
+
+      .btn {
+        margin-top: 10px;
+        width: 100%;
+
+        &:hover {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

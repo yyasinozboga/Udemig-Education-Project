@@ -1,0 +1,64 @@
+.res-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -400px;
+  width: 100%;
+  height: 100vh;
+  background-color: $bgColor;
+  padding-top: 70px;
+  transition: $mainTransition;
+
+  &.active {
+    left: 0;
+  }
+
+  &-item {
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: $mainTransition;
+
+    &.active {
+      background-color: $mainColor;
+    }
+
+    &:hover {
+      background-color: $mainColor;
+      cursor: pointer;
+    }
+  }
+
+  .sixth-item:hover {
+    background-color: blue;
+  }
+
+  .seventh-item:hover {
+    background-color: crimson;
+  }
+
+  &-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: $textColor;
+    font-size: 30px;
+  }
+
+  .close-res-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    color: $textColor;
+    font-size: 40px;
+    transition: $mainTransition;
+
+    &:hover {
+      color: crimson;
+    }
+  }
+}

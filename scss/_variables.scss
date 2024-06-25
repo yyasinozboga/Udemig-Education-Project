@@ -1,0 +1,16 @@
+$textColor: #fff;
+$bgColor: #000;
+$mainColor: #ffa343;
+$aFont: 1.3rem;
+$h1Font: 6rem;
+$h2Font: 3rem;
+$pFont: 1rem;
+$resFont: 1.4rem;
+$resH1Font: 1.6rem;
+$mainTransition: all 0.3s ease;
+
+@mixin dflex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

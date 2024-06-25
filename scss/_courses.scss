@@ -1,0 +1,50 @@
+#courses {
+  text-align: center;
+
+  .courses {
+    &-title {
+      color: $textColor;
+      font-size: $h2Font;
+    }
+
+    &-info {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      text-align: left;
+
+      &-item {
+        color: $textColor;
+
+        i {
+          margin-right: 10px;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .row {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 40px;
+
+    .col {
+      position: relative;
+
+      &-img {
+        height: 300px;
+        transition: $mainTransition;
+
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+
+        img {
+          border-radius: 12px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
